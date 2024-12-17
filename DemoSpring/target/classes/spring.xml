@@ -5,11 +5,12 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dev" class="org.practice.Dev">
+<!--        <property name="age" value="12" /> // For Setter injection -->
+<!--        <constructor-arg value="12" /> // For Constructor injection -->
+        <property name="laptop" ref="lap1"/>
     </bean>
 
-    <bean id="laptop" class="org.practice.Laptop">
+    <bean id="lap1" class="org.practice.Laptop">
     </bean>
 
-    <bean id="dev1" class="org.practice.Dev">
-    </bean>
 </beans>

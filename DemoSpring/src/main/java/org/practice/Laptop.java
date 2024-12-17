@@ -9,4 +9,7 @@ public class Laptop {
     void build(){
         System.out.println("Working on laptop");
     }
+    void compile(){
+        System.out.println("Compiling!");
+    }
 }
