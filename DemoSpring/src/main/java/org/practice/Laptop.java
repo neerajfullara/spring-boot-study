@@ -1,15 +1,12 @@
 package org.practice;
 
-public class Laptop {
+public class Laptop implements Computer {
 
     public Laptop(){
         System.out.println("Laptop Constructor");
     }
 
-    void build(){
-        System.out.println("Working on laptop");
-    }
-    void compile(){
-        System.out.println("Compiling!");
+    public void compile(){
+        System.out.println("Compiling in Laptop");
     }
 }
